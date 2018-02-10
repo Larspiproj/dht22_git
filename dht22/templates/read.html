@@ -1,0 +1,20 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',
+          filename='links.css') }}">
+</head>
+<body>
+  <div>
+    <a href="{{ url_for('index') }}">Home</a>
+  </div>
+  <hr>
+  <p>
+    <b>Temperature {{ temperature }} &degC<br>
+       Humidity {{ humidity }} %</b>
+  </p>
+  <div>
+    <a href="{{ url_for('read') }}">Refresh</a>
+  </div>
+</body>
+</html>

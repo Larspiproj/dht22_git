@@ -1,0 +1,16 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',
+          filename='links.css') }}">
+</head>
+<h3>Welcome to page for reading the DHT22 Temp and Humidity!</h3>
+<body>
+  <p>
+    <b>Request a reading:</b>
+  </p>
+  <div>
+    <a href="{{ url_for('read') }}">Request</a>
+  </div>
+</body>
+</html>
